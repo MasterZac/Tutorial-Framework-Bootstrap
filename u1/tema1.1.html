@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.1 Evolución de las aplicaciones web</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/tema1.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Introduccion a las aplicaciones web</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="../unidad1.html">Regresar</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <!-- Content -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">1.1 Evolución de las aplicaciones web</h2>
+        <div class="accordion" id="accordionEvolucion">
+            <!-- Card 1: World Wide Web -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingWeb">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeb" aria-expanded="true" aria-controls="collapseWeb">
+                        La World Wide Web
+                    </button>
+                </h2>
+                <div id="collapseWeb" class="accordion-collapse collapse show" aria-labelledby="headingWeb" data-bs-parent="#accordionEvolucion">
+                    <div class="accordion-body">
+                        <p>Para el año 1980, Tim Berners-Lee, un investigador del CERN en Ginebra...</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalWeb" data-url="data/web_content.html">
+                            Más información
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2: Web 1.0 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingWeb1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeb1" aria-expanded="false" aria-controls="collapseWeb1">
+                        Web 1.0
+                    </button>
+                </h2>
+                <div id="collapseWeb1" class="accordion-collapse collapse" aria-labelledby="headingWeb1" data-bs-parent="#accordionEvolucion">
+                    <div class="accordion-body">
+                        <p>Nace en 1991 y su periodo acaba en 2003...</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalWeb1">
+                            Más información
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3: Web 2.0 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingWeb2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeb2" aria-expanded="false" aria-controls="collapseWeb2">
+                        Web 2.0
+                    </button>
+                </h2>
+                <div id="collapseWeb2" class="accordion-collapse collapse" aria-labelledby="headingWeb2" data-bs-parent="#accordionEvolucion">
+                    <div class="accordion-body">
+                        <p>A partir de 2004 hasta la actualidad se abre un nuevo concepto por el cual el diseño de los sistemas logra la conectividad de usuarios y potencian la denominada inteligencia colectiva. La participación de usuarios se hace patente...</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalWeb2">
+                            Más información
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4: Web 3.0 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingWeb3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeb3" aria-expanded="false" aria-controls="collapseWeb3">
+                        Web 3.0
+                    </button>
+                </h2>
+                <div id="collapseWeb3" class="accordion-collapse collapse" aria-labelledby="headingWeb3" data-bs-parent="#accordionEvolucion">
+                    <div class="accordion-body">
+                        <p>Web 3.0 es un término que se utiliza para describir la evolución del uso y la interacción en la red a través de diferentes caminos...</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalWeb3">
+                            Más información
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <!-- Modal 1: World Wide Web -->
+    <div class="modal fade" id="modalWeb" tabindex="-1" aria-labelledby="modalWebLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalWebLabel">La World Wide Web</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Web 1.0 -->
+    <div class="modal fade" id="modalWeb1" tabindex="-1" aria-labelledby="modalWeb1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalWeb1Label">Web 1.0</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Web 2.0 -->
+    <div class="modal fade" id="modalWeb2" tabindex="-1" aria-labelledby="modalWeb2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalWeb2Label">Web 2.0</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Web 3.0 -->
+    <div class="modal fade" id="modalWeb3" tabindex="-1" aria-labelledby="modalWeb3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalWeb3Label">Web 3.0</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <!-- <span class="text-muted">Todos los derechos reservados - Zacarías Ventura Martínez</span>
+             -->
+            <p>Todos los derechos reservados - Zacarias Ventura Martinez</p>
+        </div>
+    </footer>
+    <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+    <script>
+        $(document).ready(function (){
+            //Funcion para cargar el contenido cuando se muestra el modal
+            $('#modalWeb').on('show.bs.modal', function (event){
+                var button = $(event.relatedTarget);
+                var url = button.data('data/web_content.html');
+                var modal = $(this);
+
+                //Realizar la peticion AJAX
+                $.ajax({
+                    type: 'GET',
+                    url: "data/web_content.html",
+                    success: function(response){
+                        modal.find('.modal-body').html(response);  
+                        console.log(response);
+                    },
+                    error: function(xhr, status, error){
+                        console.error('Error al cargar el contenido: ', error);
+                    }
+                });
+            });
+
+            $('#modalWeb1').on('show.bs.modal', function (event){
+                var button = $(event.relatedTarget);
+                var url = button.data('data/web_content.html');
+                var modal = $(this);
+
+                //Realizar la peticion AJAX
+                $.ajax({
+                    type: 'GET',
+                    url: "data/web_content1.html",
+                    success: function(response){
+                        modal.find('.modal-body').html(response);  
+                        console.log(response);
+                    },
+                    error: function(xhr, status, error){
+                        console.error('Error al cargar el contenido: ', error);
+                    }
+                });
+            });
+
+            $('#modalWeb2').on('show.bs.modal', function (event){
+                var button = $(event.relatedTarget);
+                var url = button.data('data/web_content2.html');
+                var modal = $(this);
+
+                //Realizar la peticion AJAX
+                $.ajax({
+                    type: 'GET',
+                    url: "data/web_content2.html",
+                    success: function(response){
+                        modal.find('.modal-body').html(response);  
+                        console.log(response);
+                    },
+                    error: function(xhr, status, error){
+                        console.error('Error al cargar el contenido: ', error);
+                    }
+                });
+            });
+
+            $('#modalWeb3').on('show.bs.modal', function (event){
+                var button = $(event.relatedTarget);
+                var url = button.data('data/web_content3.html');
+                var modal = $(this);
+
+                //Realizar la peticion AJAX
+                $.ajax({
+                    type: 'GET',
+                    url: "data/web_content3.html",
+                    success: function(response){
+                        modal.find('.modal-body').html(response);  
+                        console.log(response);
+                    },
+                    error: function(xhr, status, error){
+                        console.error('Error al cargar el contenido: ', error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

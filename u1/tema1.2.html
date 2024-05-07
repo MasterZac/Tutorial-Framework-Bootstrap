@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tema 1.2</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/tema1.2.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Introduccion a las aplicaciones web</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="../unidad1.html">Regresar</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <div class="container shadow">
+      <div class="info">
+        <h2>1.2 Arquitectura de las aplicaciones web</h2>
+        <p>
+          Las aplicaciones Web están basadas en el modelo Cliente/Servidor que gestionan servidores web, y   que utilizan como interfaz páginas web.
+          Las páginas Web son el componente principal de una aplicación o sitio Web. Los browsers piden páginas  (almacenadas  o creadas  dinámicamente) con  información  a  los  servidores  Web.  En algunos  ambientes  de  desarrollo de  aplicaciones  Web, las  páginas  contienen  código  HTML  y scripts dinámicos, que son ejecutados por el servidor antes de entregar la página.
+          <br><br>
+          Una vez que se entrega una página, la conexión entre el browser y el servidor Web se rompe, es decir que la lógica del negocio en el servidor solamente se activa por la ejecución de los scripts de las páginas solicitadas por el browser (en el servidor, no en el cliente). Cuando el browser ejecuta un script en el cliente, éste no tiene acceso directo a los recursos del servidor. Hay  otros  componentes  que no  son  scripts, como los  applets  (una aplicación  especial  que  se ejecuta  dentro de  un  navegador)  o los  componentes  ActiveX. Los  scripts  del  cliente  son  por lo general código JavaScript o VBSscript, mezclados con código HTML.
+          <br><br>
+          La colección de páginas son en una buena parte dinámicas (ASP, PHP, etc.), y están agrupadas lógicamente para dar un servicio al usuario. El acceso a las páginas está agrupado también en el tiempo (sesión). Los componentes de una aplicación Web son:
+        </p> 
+      </div>
+      <p class="d-inline-flex gap-1">
+        <a class="btn btn-secondary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">1. Logica de negocio</a>
+        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">2. Administracion de base de datos</button>
+        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">3. Interfaz</button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+              <ul>
+                <li><p>Parte mas importante de la aplicacion.</p></li>
+                <li><p>Define los procesos que involucran.</p></li>
+                <li><p>Conjunto de operaciones requeridas para proveer el servicio.</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+              <ul>
+                <li><p>Manipulacion de BD y Archivos</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample3">
+            <div class="card card-body">
+              <ul>
+                <li><p>Los usuarios acceden a traves de navegadores moviles, PDAs, etc.</p></li>
+                <li><p>Funcionalidad accesible a traves del navegador.</p></li>
+                <li><p>Limitada y dirigida la aplicacion.</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <p>
+          Las aplicaciones web se modelan mediante lo que se conoce como modelo de capas,  Una capa representa un elemento que procesa o trata información. Los tipos son:
+        </p>
+        <ul>
+          <li><p>Modelo de dos capas: La informacion atraviesa dos capas entre la interfaz y la administracion de base de datos.</p></li>
+        </ul>
+      </div>
+      <div class="card-group">
+        <div class="card">
+          <img src="../img/8a89a1_2b5078c59ed4473aa4aa8eb5d90c7cb3.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Modelo de dos capas</h5>
+            <p class="card-text">
+              Gran parte de la aplicacion corre en el lado del cliente (fat client).
+              Las capas son:
+              <ul>
+                <li><p>Cliente (fat client): La lógica de negocio está inmersa dentro de la aplicación que realiza el interfaz de usuario, en el lado del cliente.</p></li>
+                <li><p>Servidor: Administra los datos.</p></li>
+              </ul>
+              Las limitaciones de este modelo son:
+              <ul>
+                <li><p>Es dificilmente escalable.</p></li>
+                <li><p>Numero de conexiones reducida.</p></li>
+                <li><p>Alta carga de la red.</p></li>
+                <li><p>La flexibilidad es restringida.</p></li>
+                <li><p>La Funcionalidad es limitada.</p></li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../img/8a89a1_6800d075a88841e798c79ef70d2800ad.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Modelo de tres capas</h5>
+            <p class="card-text">
+              Una aplicación de tres capas es una aplicación cuya funcionalidad puede ser segmentada en tres niveles lógicos (capas)
+              <ul>
+                <li><p>Los servicios de presentacion.</p></li>
+                <li><p>Los servicios de negocios(Logica de negocios).</p></li>
+                <li><p>Los servicios de datos.</p></li>
+              </ul>
+              La capa de servicios de presentacion es responsable de:
+              <ul>
+                <li><p>Obtener informacion del usuario.</p></li>
+                <li><p>Enviar la informacion del usuario a los servicios de negocios para su procesamiento.</p></li>
+                <li><p>Recibir los resultados del procesamiento de los servicios de negocios.</p></li>
+                <li><p>Presentar estos al usuario.</p></li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../img/8a89a1_70e18197ef3a41849eb1519412511b31.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Aplicacion de n Capas</h5>
+            <p class="card-text">
+              Podriamos ir separando nuestra aplicacion en mas niveles logicos, por ejemplo, vamos a querer que nuestra aplicacion tenga multiples interfaces, es decir interface grafica (standalone o desktop) y tambien interface web.t
+              <br><br>
+              Lo aconsejado en esta circunstancia es separar al Servidor Web encargado de alojar las páginas Web en una capa más. En este caso se tendrían 4 capas.
+              <br><br>
+              Mientras mas servicios coloquemos a nuestra aplicacion y mientras mas escalable lo imaginemos, mas capas logicas van a irse añadiendo a nuestra arquitectura; alli esta el inicio del estudio de las siguientes secciones del curso, <strong>LOS PATRONES DE DISEÑO.</strong>
+              <ul>
+                <li><p>La arquitectura en 3 capas es la mas usada.</p></li>
+                <li><p>La arquitectura en 4 capas puede ser mas escable.</p></li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+    <script>
+   </script>
+</body>
+</html>
